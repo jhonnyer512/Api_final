@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz Con pollo</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Arroz Con Pollo</h1>
+    </header>
+
+    <!-- Slider de imágenes -->
+    <div class="slider-container">
+        <div class="slider">
+            <img class="slider-image" src="imagenes/imagen 3.jpg" alt="Imagen 1">
+            <img class="slider-image" src="imagenes/imagen2.jpg" alt="Imagen 2">
+            <img class="slider-image" src="imagenes/imagen3.jpg" alt="Imagen 3">
+        </div>
+        <!-- Flechas de navegación -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Título del precio -->
+    <div class="container-title">Precio</div>
+
+    <!-- Información del producto -->
+    <main>
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>$95.00</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <!-- Opciones del producto -->
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">bebida</label>
+                    <select name="colour" id="colour">
+                        <option disabled selected value="">Pony Malta</option>
+                        <option value="rojo">Coca Cola</option>
+                        <option value="blanco">Manzana</option>
+                        <option value="beige">Pepsi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Número de clientes a reservar</label>
+                    <select name="size" id="size">
+                        <option disabled selected value="">Escoge una opción</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <!-- Añadir al carrito -->
+            <div class="container-add-cart">
+                
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Reservar
+                </button>
+            </div>
+        </div>
+
+        <!-- Sección de productos relacionados -->
+        <section class="container-related-products">
+            <h2>Otros Platos</h2>
+            <div class="card-list-products">
+                <div class="card">
+                    <div class="card-img">
+                        <a href="Carne asada.html">
+                            <img class="imagen1" src="imagenes/imagen 7.jpg" alt="Tableta Refractaria">
+                        </a>
+                    </div>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Carne Asada</h3>
+                            <p class="category">Kroki Pollo</p>
+                        </div>
+                        <div class="price">$85.00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="numero5.html">
+                            <img class="imagen1" src="imagenes/imagen 5.jpg" alt="Ladrillo Refractario">
+                        </a>
+                    </div>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Pollo a la Broaster</h3>
+                            <p class="category">Kroki Pollo</p>
+                        </div>
+                        <div class="price">$255.00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="numero6.html">
+                            <img class="imagen1" src="imagenes/imagen 6.jpg" alt="Ladrillo Liviano">
+                        </a>
+                    </div>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Mojarra Frita</h3>
+                            <p class="category">Kroki Pollo</p>
+                        </div>
+                        <div class="price">$105.00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <a href="numero8.html">
+                            <img class="imagen1" src="imagenes/imagen 8.jpg" alt="Teja Colonial">
+                        </a>
+                    </div>
+                    <div class="info-card">
+                        <div class="text-product">
+                            <h3>Pechuga a la plancha</h3>
+                            <p class="category">Kroki Pollo</p>
+                        </div>
+                        <div class="price">$250.00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
