@@ -9,7 +9,7 @@
 <body class="bg-gradient-to-br from-green-100 to-green-300 min-h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-sm">
     <h2 class="text-2xl font-bold text-center text-green-600 mb-6">Crear Cuenta</h2>
-    <form action="#" method="POST" class="space-y-5">
+    <form id="registroForm" action="registroForm" method="POST" class="space-y-5">
         <div>
         <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
         <input type="text" id="name" name="name" required
@@ -61,14 +61,14 @@
             headers: {
             'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ nombre, email, password })
+            body: JSON.stringify({ nombre, correo, contrasena })
         });
 
         const data = await response.json();
 
         if (response.ok) {
             alert('Usuario creado con éxito');
-          // window.location.href = "/login.html"; // redirigir si lo deseas
+            window.location.href = '../principal.html';
         } else {
             alert('Error: ' + (data.mensaje || 'No se pudo crear el usuario'));
         }

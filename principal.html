@@ -29,6 +29,7 @@
 					</div>
 
 					<div class="container-user">
+						<span id="nombreUsuario" class="text"></span>
 						<a href="views/iniciosesion.html"><i class="fa-solid fa-user"></i></a>
 						<i class="fa-solid fa-basket-shopping"></i>
 						<div class="content-shopping-cart">
@@ -586,6 +587,14 @@
 		</footer>
 
 		<script src="https://kit.fontawesome.com/a492850ef3.js" crossorigin="anonymous"></script>
+		<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const nombre = localStorage.getItem('nombre');
+			if (nombre) {
+			document.getElementById('nombreUsuario').textContent = nombre;
+			}
+		});
+		</script>
 
 	</body>
 </html>
